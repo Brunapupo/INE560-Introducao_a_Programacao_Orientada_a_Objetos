@@ -1,11 +1,6 @@
-from funcoes.primos import ePrimo
+def modulo_lista(lista):
+    return [abs(numero) for numero in lista]
 
-def primosLista(lista):
-   numeros_primos = []
-   for numero in lista:
-       if ePrimo(numero):
-           numeros_primos.append(numero)
-   return numeros_primos
-
-
-print(primosLista([1,3,7,9,11,15,19,60]))
+# Exemplo de uso da função
+exemplo_lista = [10, -20, 30, -40, 50]
+print(modulo_lista(exemplo_lista))

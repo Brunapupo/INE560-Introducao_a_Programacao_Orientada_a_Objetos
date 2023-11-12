@@ -1,11 +1,7 @@
-def correcaoProva(prova):
-   cont_acertos = 0
-   gabarito = ['A','A','C','E','D','B','C','E','B','D']
-   for numero_atual in range(len(prova)):
-       if prova[numero_atual] == gabarito[numero_atual]:
-           cont_acertos += 1
-   return cont_acertos
+def intersecao_listas(lista1, lista2):
+    return [elemento for elemento in lista1 if elemento in lista2]
 
-
-prova = input("Informe suas respotas da prova: ").split(',')
-print(correcaoProva(prova))
+# Exemplo de uso
+lista1 = [1, 2, 3, 4]
+lista2 = [3, 4, 5, 6]
+print("Interseção das listas:", intersecao_listas(lista1, lista2))

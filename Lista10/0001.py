@@ -1,10 +1,10 @@
-def maiorNumero(lista):
-   maior = - 1000000
-   cont = 0
-   while cont < len(lista):
-       if lista[cont] > maior:
-           maior = lista[cont]
-       cont += 1
-   return maior
+from random import randrange
 
-print(maiorNumero(lista = [10, 60, 70, 80]))
+def numerosAleatorios(numero):
+   lista_numeros_aleatorios = []
+   for i in range(numero):
+       lista_numeros_aleatorios.append(randrange(100))
+   return lista_numeros_aleatorios
+
+numeros = int(input("Informe a quantidade de números aleatórios: "))
+print(numerosAleatorios(numeros))
