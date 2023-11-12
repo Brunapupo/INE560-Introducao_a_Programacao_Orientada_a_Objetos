@@ -1,1 +1,1 @@
-# INE560-Introducao_a_Programacao_Orientada_a_Objetos
+# Introdução a Programação Orientada à Objetos UFSC
