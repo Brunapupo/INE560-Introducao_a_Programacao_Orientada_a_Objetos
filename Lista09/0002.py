@@ -12,14 +12,11 @@ def eh_primo(numero):
    else:
        return True
 
-
 def primosLista(lista):
    numeros_primos = []
    for numero in lista:
-       if ePrimo(numero):
+       if eh_primo(numero):  # Aqui estava o erro, agora corrigido
            numeros_primos.append(numero)
    return numeros_primos
 
-
 print(primosLista([1,3,7,9,11,15,19,60]))
-

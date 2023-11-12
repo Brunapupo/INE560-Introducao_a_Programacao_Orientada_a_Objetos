@@ -5,7 +5,3 @@ def correcaoProva(prova):
        if prova[numero_atual] == gabarito[numero_atual]:
            cont_acertos += 1
    return cont_acertos
-
-
-prova = input("Informe suas respotas da prova: ").split(',')
-print(correcaoProva(prova))
